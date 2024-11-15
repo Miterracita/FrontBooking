@@ -75,7 +75,7 @@ const FormRegister = ({
                 localStorage.setItem('token', result.token);
 
                 setTimeout(() => {
-                    navigate('/home');
+                    navigate('/new-booking');
                 }, 2000)  
             }
         
