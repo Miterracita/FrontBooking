@@ -1,0 +1,96 @@
+.c-bono-user {
+    width: 340px;
+    padding: 20px;
+    margin: 30px;
+    border: 1px solid var(--background-one);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(143, 143, 143, 0.2);
+}
+.c-bono-user h4 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: var(--background-one);
+}
+.top-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+}
+.ico-state {
+    margin: 20px;
+    position: relative;
+}
+.ico-activo:hover::after {
+    content: "Bono Activo";
+    font-weight: 600;
+    color:var(--background-one);
+    position: absolute;
+    padding: 5px;
+    top: 40px; 
+    left: 0;
+}
+.ico-inactivo:hover::after {
+    content: "Bono Inactivo";
+    font-weight: 600;
+    color:var(--background-one);
+    position: absolute;
+    top: 40px; 
+    left: 0;
+}
+.content {
+    padding: 0 30px 30px 30px;
+}
+.content h5 {
+    font-weight: 600;
+    color: var(--background-one);
+    margin-top:10px;
+}
+.box-reservas {
+    background-color: var(--background-four);
+    padding: 20px;
+    margin-top: 30px;
+}
+.box-reservas ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.box-reservas li {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+/* clases reservadas */
+.box-reservas .reserved {
+    position: relative;
+    border: 1px solid #A02334;
+}
+.box-reservas .reserved::after {
+    color: #A02334;
+    content: "x";
+    font-weight: 600;
+    font-size: 30px;
+    position: absolute;
+    top: -9px; 
+    left: 6px;
+}
+/* clases disponibles */
+.box-reservas .available {
+    background-color: #06D001;
+    border: 1px solid var(--background-one);
+}
+
+/* tablet */
+@media (max-width: 1024px) {}
+/* mobile */
+@media (max-width: 767px) {
+    .c-bono-user {
+        width: 300px;
+        margin: 10px;
+    }
+}

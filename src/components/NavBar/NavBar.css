@@ -1,0 +1,21 @@
+.nav-bar {
+    padding: 20px;
+    background-color: var(--background-one);
+    gap: 20px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+}

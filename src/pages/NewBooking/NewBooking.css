@@ -1,0 +1,90 @@
+.box-new-booking {
+    padding: 0 100px;
+}
+.new-booking-page .box-content {
+    display: flex;
+    padding: 30px;
+}
+.new-booking-page .secondary-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.new-booking-page .btn-new-booking {
+    list-style: none;
+}
+.new-booking-page .btn-new-booking  a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    border:1px solid var(--background-two);
+    background-color: var(--background-two);
+    padding: 10px 20px;
+    color: white;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.new-booking-pager .btn-new-booking  a:hover {
+    border:1px solid var(--background-one);
+    background-color: var(--background-one);
+}
+
+.new-booking-pager .link-box {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.new-booking-pager .link-box svg {
+    fill: white;
+}
+
+.box-title-booking {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.box-title-booking h2 {
+    font-size: 30px;
+    color: var(--background-two);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.box-title-booking h2 span{
+    font-weight: 600;
+}
+.box-title-booking p {
+    font-size: 18px;
+    color: var(--background-one);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.box-new-booking-bonos {
+    display: flex;
+}
+
+/* tablet */
+@media (max-width: 1024px) {
+    .box-new-booking {
+        padding: 0 25px;
+    }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+    .box-new-booking {
+        padding: 0px;
+    }
+    .new-booking-page .box-content {
+        flex-direction: column;
+    }
+    .new-booking-page .secondary-nav {
+        flex-direction: column;
+    }
+    .box-new-booking-bonos {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,46 @@
+/*Logo*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*Generica*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*Icons*/
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+
+:root {
+  --background-one:#424242;
+  --background-two:#229799;
+  --background-three:#48CFCB;
+  --background-four:#F5F5F5;
+
+  --background-light-three:#c5c5c52c;
+
+  --background-modal:rgba(72, 207, 203, 0.5);
+
+  --color-red:#C70039;
+  --color-orange:#FF5733;
+
+  --height-header: 80px;
+  --height-footer: 50px;
+
+  --box-shadow: rgba(66, 66, 66, 0.4);
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* font-family: "Ubuntu", sans-serif; */
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+} */

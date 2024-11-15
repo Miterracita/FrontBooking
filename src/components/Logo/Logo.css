@@ -1,0 +1,46 @@
+.c-logo {
+    /* padding: 100px 100px 50px;< */
+}
+
+h1 {
+    font-weight: 300;
+    font-family: "Ubuntu", sans-serif;
+}
+
+h1 span{
+    font-weight: 700;
+}
+
+.logo-blue {
+    color: var(--background-two);
+}
+.logo-dark-blue {
+    color: var(--background-three);
+}
+.logo-dark {
+    color: var(--background-one);
+}
+
+.small,
+.small span {
+    font-size: 25px;
+}
+
+.medium,
+.medium span {
+    font-size: 50px;
+}
+.big,
+.big span{
+    font-size: 100px;
+}
+
+@media (max-width: 764px){
+    .big,
+    .big span {
+        font-size: 50px;
+    }
+    .c-logo {
+        padding: 30px;
+    }
+}

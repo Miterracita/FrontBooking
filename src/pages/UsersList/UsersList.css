@@ -1,0 +1,61 @@
+    .users {
+        padding: 0 100px;
+    }
+    h2 {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 30px;
+      }
+    h2 span {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    h3 {
+        color:white;
+        font-weight: 400;
+    }
+    .list-users {
+        position: relative;
+    }
+    .box-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    /*Formulario*/
+    .box-form-filtros {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .box-form-filtros label {
+        color:white;
+        font-weight: 400;
+    }
+    .box-form-filtros input {
+        height: 35px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+    .box-form-filtros .b-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px
+    }
+
+/* mobile */
+@media (max-width: 767px) {
+    .users {
+        padding: 0px;
+    }
+}
+/* tablet */
+@media (max-width: 1024px) {
+    .users {
+        padding: 0 25px;
+    }
+}

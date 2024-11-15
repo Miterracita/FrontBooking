@@ -1,0 +1,10 @@
+.box-buttons-admin {
+    padding-left: 30px;
+    align-content: end;
+    justify-self: flex-end;
+    height: 100%;
+}
+
+.box-buttons-admin button {
+    min-width: 80px;
+}

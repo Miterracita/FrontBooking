@@ -1,0 +1,37 @@
+.wrapper-filtros {
+    margin: 10px; 
+    border-radius: 10px 10px 0 0 ;
+    background-color: var(--background-two);
+    padding:10px
+}
+.box-title-filtros {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.title-filtros {
+    display: flex;
+    gap: 10px;
+    color: white;
+    align-items: center;
+    padding: 10px;
+}
+.title-filtros svg {
+    fill: white;
+}
+.cont-filtros {
+    padding: 20px;
+    /* transition: all 0.5s ease-in-out; */
+    transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out, transform 0.5s ease-in-out;
+    opacity: 0;
+    height: 0px;
+    transform: translateY(-20px);
+    overflow: hidden;
+}
+
+.cont-filtros.show{
+    opacity: 1;
+    height: auto;
+    transform: translateY(0px);
+}
+

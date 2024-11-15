@@ -1,0 +1,33 @@
+.events {
+    padding: 0 100px;
+    position: relative;
+}
+h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+h2 span {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+.box-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* mobile */
+@media (max-width: 767px) {
+    .events {
+        padding: 0;
+    }
+}
+/* tablet */
+@media (max-width: 1024px) {
+    .events {
+        padding: 0 25px;
+    }
+}

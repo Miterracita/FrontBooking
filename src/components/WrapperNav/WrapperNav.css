@@ -1,0 +1,23 @@
+.c-wrapper-nav {
+    width: 100%;
+    padding: 120px 100px 80px;
+    display: flex;
+    align-items: center;
+}
+
+/*mobile*/
+@media (max-width: 767px) {
+    .c-wrapper-nav {
+        padding: 40px;
+        flex-direction: column;
+    }
+}
+
+/* tablet */
+@media (max-width: 1024px) {
+    .c-wrapper-nav {
+        padding: 80px 40px 40px;
+        flex-direction: column;
+        gap:20px;
+    }
+}

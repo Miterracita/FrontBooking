@@ -1,0 +1,113 @@
+
+.c-booking {}
+
+    .box-booking {
+        margin: 10px 10px 30px 10px;
+        padding:20px;
+        border: 1px solid white;
+        border-radius: 10px;
+        box-shadow: 10px 10px 25px 8px rgba(230,230,230,1);
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 25px;
+        align-items: flex-start;
+    }
+    .box-booking:hover {
+        border: 1px solid #eee;
+        box-shadow: 10px 10px 25px 8px rgb(224, 224, 224);
+    }
+    .info-booking {
+        display: flex;
+        gap:25px;
+        font-weight: 600;
+    }
+    .info-booking span{
+        font-weight: 400;
+    }
+    .info-booking h3 {
+        font-size: 25px;
+        font-weight: 600;
+        color: var(--background-one);
+        margin-bottom: 6px;
+    }
+    .info-booking .txt p{
+        margin-bottom: 6px;
+    }
+    .img-box {
+        width: 150px;
+        height: 150px;
+    }
+    .img-box img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .box-buttons {
+        min-width: 250px;
+        border-left: 1px solid #c4c4c4;
+        padding-left: 30px;
+    }
+
+    .bonos-list h3,
+    .info-user .id {
+        color:#888;
+    }
+
+    .bono-item {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .bono-item h4 {
+        margin: 0;
+        font-weight: 600;
+    }
+
+    .bono-item h5 {
+        margin-top: 10px;
+    }
+
+    .bono-item ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+
+    .btn {
+        border: none;
+        padding: 8px;
+        font-size: 12px;
+        font-weight: 600;
+        margin: 5px;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: var(--background-three);
+    }
+
+    a.btn.blue {
+        text-decoration: none;
+        margin-top:25px;
+    }
+
+    .blue {
+        background-color: var(--background-two);
+        color: white;
+    }
+    .margin-top {
+        margin-top: 10px;
+    }
+
+
+/* mobile */
+@media (max-width: 767px) {
+    .box-booking {
+        grid-template-columns: 1fr;
+    }
+    .info-booking {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,17 @@
+.c-wrapper {
+    width: 100%;
+    padding: 0 100px;
+}
+
+@media (max-width: 764px) {
+    .c-wrapper {
+        padding: 0 20px;
+    }
+}
+
+/* tablet */
+@media (max-width: 1024px) {
+    .c-wrapper {
+        padding: 0 20px;
+    }
+}

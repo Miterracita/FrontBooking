@@ -1,0 +1,66 @@
+.box-register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 100px;
+    border-radius: 10px;
+}
+
+.box-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+.box-title svg {
+    fill: var(--background-two);
+}
+.box-register-form h2 {
+    font-size: 30px;
+    color: var(--background-two);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+.box-register-form h2 span{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.box-form-register {
+    padding: 50px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 25px 8px rgba(230,230,230,1);
+}
+.box-item-user label {
+    display: block;
+    font-weight: 600;
+    color: var(--background-one);
+}
+.box-item-user input {
+    height: 30px;
+    border: 1px solid #eee;
+    padding: 10px;
+    margin:10px 0;
+    width: 100%;
+}
+
+.box-item-user input[type="file"]{
+    border:none;
+    height: 50px;
+}
+
+.flex {
+    display: flex;
+    gap: 30px;
+}
+
+/* mobile */
+@media (max-width: 767px) {
+    .box-register-form {
+        padding: 0px;
+    }
+}

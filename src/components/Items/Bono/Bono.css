@@ -1,0 +1,71 @@
+
+.box-bono {
+    margin: 10px 10px 30px 10px;
+    padding:20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 25px 8px rgba(230,230,230,1);
+    display: grid;
+    grid-template-columns: 80px 2fr 3fr 1fr;
+    gap: 10px;
+    position: relative;
+}
+.box-bono:hover {
+    border: 1px solid #eee;
+    box-shadow: 10px 10px 25px 8px rgb(224, 224, 224);
+}
+/*bono info*/
+    .bono-info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+    .bono-info h3 {
+        font-size: 25px;
+        font-weight: 600;
+        color: var(--background-one)
+    }
+    .bono-info span {
+        font-weight: 600;
+    }
+    .red {
+        color: red;
+    }
+    .green {
+        color: #06D001;
+    }
+
+/*icono activo*/
+.top-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.ico-state {
+    margin: 20px;
+    position: relative;
+}
+.ico-activo:hover::after {
+    content: "Bono Activo";
+    font-weight: 600;
+    color:var(--background-one);
+    position: absolute;
+    padding: 5px;
+    top: 40px; 
+    left: 0;
+}
+.ico-inactivo:hover::after {
+    content: "Bono Inactivo";
+    font-weight: 600;
+    color:var(--background-one);
+    position: absolute;
+    top: 40px; 
+    left: 0;
+}
+
+/* mobile */
+@media (max-width: 767px) {
+    .box-bono {
+        grid-template-columns: 1fr;
+    }
+}
