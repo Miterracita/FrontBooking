@@ -35,7 +35,7 @@ const FormLogin = () => {
             if (userRole === 'admin') {
                 navigate('/gestion-usuarios'); // Ruta para admins
             } else {
-                navigate('/home'); // Ruta para users
+                navigate('/new-booking'); // Ruta para users
             }
 
           } else {
