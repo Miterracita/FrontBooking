@@ -122,7 +122,7 @@ const NewBooking =() => {
 
           <h3>Estos son tus <span>bonos:</span></h3>
           <div className='box-new-booking-bonos'>
-              {bonos ? (
+            {bonos && bonos.length > 0 ? (
                   bonos.map((bono: BonoData) => (
                       <BonoUsers 
                         key={bono._id}

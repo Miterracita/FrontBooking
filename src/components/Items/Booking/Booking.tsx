@@ -12,6 +12,12 @@ import useCommonReducer from '../../../reducers/useCommonReducer.js';
 import { deleteBooking } from '../../../services/apiServicesBookings.js';
 import { formatDate } from '../../../utils/date.js';
 
+export interface Reservation {
+    _id: string;
+    localizador: string;
+    bono: Bono;
+    evento: Evento;
+  }
 export interface Bono {
     _id: string;
     name: string;
@@ -22,6 +28,7 @@ export interface Bono {
     totalUses: number,
     availableUses: number,
     expirationDate?: string,
+    reservations: Reservation[];
 }
 
 export interface Evento {

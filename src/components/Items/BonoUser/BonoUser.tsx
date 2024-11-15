@@ -90,7 +90,7 @@ const BonoUsers = ({
               <div className='box-reservas'>
                 <ul>
                   {Array.from({ length: type }, (_, index) => (
-                    <li key={index} className={index < availableUses ? 'available' : 'reserved'}></li>
+                    <li key={index} className={index < (availableUses ?? 0) ? 'available' : 'reserved'}></li>
                   ))}
                 </ul>
               </div>

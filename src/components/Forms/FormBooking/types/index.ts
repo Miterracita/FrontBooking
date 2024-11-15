@@ -7,9 +7,9 @@ export interface UserData {
 
 export interface Reservation {
     _id: string;
-    localizador: string; // O el tipo adecuado para la fecha
-    bono: BonoData; // O el tipo adecuado para el estado
-    evento: EventData; // O el tipo adecuado para el estado
+    localizador: string;
+    bono: BonoData;
+    evento: EventData;
   }
 
 export interface BonoData {
