@@ -1,8 +1,8 @@
 .c-bono-user {
-    width: 340px;
+    min-width: 340px;
     padding: 20px;
     margin: 30px;
-    border: 1px solid var(--background-one);
+    border: 1px solid #e7e7e7;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 1px rgba(143, 143, 143, 0.2);
 }
@@ -45,12 +45,13 @@
 .content h5 {
     font-weight: 600;
     color: var(--background-one);
-    margin-top:10px;
+    margin-top:5px;
 }
 .box-reservas {
     background-color: var(--background-four);
     padding: 20px;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 .box-reservas ul {
     list-style-type: none;
@@ -69,16 +70,17 @@
 .box-reservas .reserved {
     position: relative;
     border: 1px solid #A02334;
+    background-color: #A02334;
 }
-.box-reservas .reserved::after {
+/* .box-reservas .reserved::after {
     color: #A02334;
     content: "x";
     font-weight: 600;
     font-size: 30px;
     position: absolute;
-    top: -9px; 
-    left: 6px;
-}
+    top: -12px; 
+    left: 4px;
+} */
 /* clases disponibles */
 .box-reservas .available {
     background-color: #06D001;

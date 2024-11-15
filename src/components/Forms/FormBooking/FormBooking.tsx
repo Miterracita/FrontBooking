@@ -150,7 +150,7 @@ const FormBooking = ({
                 setNotification(`Reserva creada correctamente`);
     
                 setTimeout(() => {
-                    navigate('/gestion-reservas');
+                    navigate('/new-booking'); 
                 }, 2000);
             }
         } catch (error: any) {

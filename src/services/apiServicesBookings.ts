@@ -1,6 +1,6 @@
 // url producción
-const API_URL = "https://bono-booking-back.vercel.app";
-// const API_URL = "http://localhost:3000";
+// const API_URL = "https://bono-booking-back.vercel.app";
+const API_URL = "http://localhost:3000";
 
 
 // url local
@@ -70,11 +70,15 @@ export const updateBooking = async (id: any, userData: any) => {
 };
 
 //ELIMINAR una reserva
-export const deleteBooking = async (id: any) => {
+export const deleteBooking = async (id: any, bonoId: any) => {
   console.log("Attempting to delete booking with ID:", id);
   try {
     const response = await fetch(`${API_URL}/bookings/${id}`, {
       method: 'DELETE',
+      headers: {
+          'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ bonoId }), 
     });
     if (!response.ok) {
       throw new Error('Network response was not ok');

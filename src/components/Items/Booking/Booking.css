@@ -25,13 +25,22 @@
         font-weight: 400;
     }
     .info-booking h3 {
-        font-size: 25px;
+        font-size: 15px;
         font-weight: 600;
         color: var(--background-one);
         margin-bottom: 6px;
     }
+    .info-booking h3 span{
+        font-size: 30px;
+        font-weight: 600;
+        color: var(--background-two);
+        margin-bottom: 6px;
+    }
     .info-booking .txt p{
         margin-bottom: 6px;
+    }
+    .info-booking .txt p span{
+        font-weight: 600;
     }
     .img-box {
         width: 150px;

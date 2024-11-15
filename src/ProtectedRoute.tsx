@@ -15,7 +15,7 @@ const ProtectedRoute = ({ isAdminRequired = false }:ProtectedRouteProps ) => {
   const userRole = getUserRole(); //obtiene el rol de usuario del token
 
   if (isAdminRequired && userRole !== "admin") {
-    return <Navigate to="/new-booking" replace />; // Redirige a /home si el usuario no es admin
+    return <Navigate to="/new-booking" replace />; // Redirige a /new-booking si el usuario no es admin
   }
 
   // if (!isAdminRequired && userRole === "admin") {

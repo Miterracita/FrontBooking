@@ -1,11 +1,13 @@
 .nav {
-    padding: 20px;
+    padding: 20px 220px 20px 200px;
     background-color: var(--background-one);
     gap: 20px;
     color: white;
     position: fixed;
     width: 100%;
     z-index: 5;
+    display: flex;
+    justify-content: center;
 }
 .nav ul {
     list-style: none;

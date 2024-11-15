@@ -20,11 +20,12 @@ function BookingList() {
   const refreshBookings = useCallback(async () => {
     try {
       const bookingList = await getBooking();
+      console.log(bookingList);
       setBookings(bookingList || []);  // Aseguramos que siempre sea un arreglo
       console.log(bookingList)
       
     } catch (error:any) {
-      console.error('Error fetching bookings:', error);
+      console.error('Error al obtener la lista de reservas', error);
       setError(error.message || 'Error al obtener la lista de reservas');
     }
   }, []);

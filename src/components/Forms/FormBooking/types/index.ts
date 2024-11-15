@@ -5,6 +5,13 @@ export interface UserData {
     rol: string;
 }
 
+export interface Reservation {
+    _id: string;
+    localizador: string; // O el tipo adecuado para la fecha
+    bono: BonoData; // O el tipo adecuado para el estado
+    evento: EventData; // O el tipo adecuado para el estado
+  }
+
 export interface BonoData {
     _id: string;
     name: string;
@@ -15,6 +22,7 @@ export interface BonoData {
     totalUses: number,
     availableUses: number,
     expirationDate?: string,
+    reservations: Reservation[];
 }
 
 export interface EventData {
